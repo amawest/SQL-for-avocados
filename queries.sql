@@ -4,8 +4,8 @@
 DROP TABLE avocados; 
 
 CREATE TABLE avocados(
+index int NOT NULL, 
 date DATE NOT NULL,
-region VARCHAR(50) NOT NULL,
 avgprice DEC (10, 2) NOT NULL,
 totalvolume DEC (10, 2) NOT NULL,
 PLU4046 DEC (10, 2) NOT NULL,
@@ -17,7 +17,8 @@ Large_Bags DEC (10, 2) NOT NULL,
 XLarge_Bags DEC (10, 2) NOT NULL,
 type VARCHAR(50) NOT NULL,
 year INT NOT NULL,
-PRIMARY KEY(region)
+region VARCHAR(50) NOT NULL,
+PRIMARY KEY(index)
 );
 
 select * from avocados;
